@@ -1,0 +1,7 @@
+cd kube-prometheus
+kubectl apply --server-side -f manifests/setup
+kubectl apply -f manifests/
+cd kepler
+kubectl create -f _output/generated-manifest/deployment.yaml
+
+
